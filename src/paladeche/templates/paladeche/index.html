@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paladèche</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'favicon/favicon.png' %}" type="image/x-icon">
+
+</head>
+<body>
+    {% include 'partials/navbar.html' %}
+    <main>
+        <div class="divTitlePaladeche">
+            <div class="paladeched" style="flex-direction: column;">
+                <p class="paladeche">Paladèche, <br> Paladium en une semaine</p>
+            </div>
+        </div>
+        
+        <div class="installDiv">
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" class="install">Télécharger dès maintenant !</button>
+            </form>
+            
+        </div>
+    </main>
+    <footer>
+        {% include 'partials/footer.html' %}
+    </footer>
+</body>
+</html>

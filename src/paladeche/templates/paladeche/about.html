@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos</title>
+    <link rel="icon" href="{% static 'favicon/favicon.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% include 'partials/navbar.html' %}
+    <main>
+        <div class="d_presentation_paladeche">
+            <div class="presentation_paladeche">
+                <p class="paladeche">Paladèche: Qu'est-ce que c'est ?</p>
+                <p class="presentation_paladecheP">
+                    Paladèche est un serveur minecraft moddée faction-pvp tiré du grand serveur Paladium.
+                    <br>
+                    Ce serveur à été créé pour un défis d'essayer de refaire les bases de Paladium en 1 semaine.
+                    <br>
+                    <br>
+                    Ce projet comporte donc beaucoup de choses, telle que :
+                    <br>
+                    <br>
+                    -La création d'un site internet;
+                    <br>
+                    -D'un serveur discord;
+                    <br>
+                    -D'une chaine Youtube;
+                    <br>
+                    -D'un réseau de serveurs dédiés avec velocity comportant 3 minages, 2 factions, 1 lobby;
+                    <br>
+                    -D'un launcher personnalisé;
+                    <br>
+                    -D'un minecraft personnalisé;
+                    <br>
+                    -D'un mod personnalisé ( en une semaine, pas le temps d'apprendre le java, le mods est donc créé avec MCreator).
+                    <br>
+                    <br>
+                    Les taches ont étés répartis pour 3 personnes :
+                    <br>
+                    <br>
+                    LeBeaufort fait le launcher, héberge 3 serveurs, et autres;
+                    <br>
+                    Chiroo__ fait le site, héberge 3 serveurs, et autres;
+                    <br>
+                    Xiao fait le mods, héberge un serveur.
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    Paladèche est donc un serveur minecraft de faction-pvp dans lequel <br>le but est à peu près le même que celui de Paladium.
+                    <br>Le mod créé apportera un taux d'originalité et le projet continuera d'exister si il ne flop pas.
+                    <br>
+                    <br>
+                </p>
+                <div class="installGraph">
+                    {% csrf_token %}
+                    <button onclick="window.location.href='https://app.diagrams.net/#G18hfs3yHhdrMjFNMDOwO2mYJavi00kWnb%23%7B%22pageId%22%3A%22OITYoUZRCYoajpp0DGlV%22%7D'" class="install">Ouvrir la "roadmap" de Paladèche</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        {% include 'partials/footer.html' %}
+    </footer>
+</body>
+</html>

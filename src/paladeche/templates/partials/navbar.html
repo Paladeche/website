@@ -1,0 +1,23 @@
+<header>
+    <nav>
+        <ul class="navbar">
+            {% if request.path == '/' %}
+            <li> <a class="border-bottom-nav" href="{% url 'index' %}" id="accueil-link"><div class="d-button-nav">Accueil</div></a></li>
+            {% else %}
+            <li><a href="{% url 'index' %}" id="accueil-link">Accueil</a></li>
+            {% endif %}
+
+            {% if request.path == '/status/' %}
+            <li><a class="border-bottom-nav" href="{% url 'status' %}" id="projets-link"><div class="d-button-nav">Status</div></a></li>
+            {% else %}
+            <li><a href="{% url 'status' %}" id="projets-link">Status</a></li>
+            {% endif %}
+
+            {% if request.path == '/a-propos/' %}
+            <li><a href="{% url 'about' %}" id="a-propos-link"><div class="d-button-nav">A propos</div></a></li>
+            {% else %}
+            <li><a href="{% url 'about' %}" id="a-propos-link">A propos</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>

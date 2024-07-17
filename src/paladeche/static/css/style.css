@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #303030;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-sherif;
+}
+
+/*Ici, c'est les éléments qui sont figés et qui seront présents sur toutes
+les pages du site, avec donc le même style*/
+/*NAVBAR*/
+.navbar {
+    box-shadow: 0 8px 24px rgb(0 0 0 / 35%);
+    position: fixed;
+    height: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #303030;
+    font-family: "Montserrat", sans-sherif;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: bold;
+    z-index: 20;
+}  
+
+/*Les listes qui se trouvent dans la ul qui se trouve 
+elle même dans la navbar*/
+.navbar li {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-button-nav {
+    border-bottom: #222 solid 1px;
+    height: fit-content;
+    width: fit-content;
+}
+
+/*Les liens qui se troyvent dans les li, qui se trouvent dans la ul
+qui se trouve elle même dans la navbar*/
+.navbar li a {
+    height: 100%;
+    width: 80%;
+    font-size: 26px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*effet de hover lorsqu'on passe sur un des boutons 
+(projets, accueil et à propos)*/
+.navbar li:hover a {
+    color: #fe5c00;
+    border-bottom: #fe5c00 solid 1px;
+}
+
+.divTitlePaladeche {
+    width: 100%;
+    height: 40vh;
+    padding-top: 100px;
+}
+
+.paladeched {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paladeche {
+    font-family: "Montserrat", sans-sherif;
+    font-size: 75px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+.installDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.install {
+    padding: 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #fe5c00;
+    border: #222 solid 1px;
+    font-family: "Montserrat", sans-sherif;
+    font-size: 20px;
+}   
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bas_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.paladecheFooter, .madeBy {
+    color: whitesmoke;
+}
+
+.contactFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contactFooter p {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactFooter p:hover .contactFooter p a {
+    text-decoration: underline;
+}
+
+.d_presentation_paladeche {
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.presentation_paladeche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    box-shadow: -10px 10px 25px #222;
+}
+
+.presentation_paladecheP {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.status_containerD {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+    margin-bottom: 100px;
+}
+
+.status_container {
+    flex-direction: column;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    border-radius: 30px;
+    box-shadow: -10px 10px 25px #222;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    justify-self: center;
+}
+
+.server {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fe5c00;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.server p {
+    font-size: 20px;
+    font-weight: 700;
+    width: 33%;
+}
