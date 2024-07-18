@@ -102,6 +102,8 @@ qui se trouve elle même dans la navbar*/
     justify-content: center;
     align-items: center;
     padding-bottom: 40px;
+    flex-direction: column;
+
 }
 
 .install {
@@ -113,6 +115,21 @@ qui se trouve elle même dans la navbar*/
     font-family: "Montserrat", sans-sherif;
     font-size: 20px;
 }   
+
+.plateforme_install {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.install {
+    margin: 10px;
+}
+
+.install a img {
+    width: 64px;
+    height: 64px;
+}
 
 .footer {
     display: flex;

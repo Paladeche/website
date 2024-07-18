@@ -19,11 +19,12 @@
         </div>
         
         <div class="installDiv">
-            <form method="post">
-                {% csrf_token %}
-                <button type="submit" class="install">Télécharger dès maintenant !</button>
-            </form>
-            
+                <p class="install">Télécharger des maintenant ! Choisissez votre version :</p>
+                <div class="plateforme_install">
+                    <button type="submit" class="install"><a href="https://github.com/Paladeche/launcher/releases/download/1.0.1/Paladeche-Launcher-win-x64.exe"><img src="{% static 'icons/windows-10.png' %}" alt=""></a></button>
+                    <button type="submit" class="install"><a href="https://github.com/Paladeche/launcher/releases/download/1.0.1/Paladeche-Launcher-mac-universal.dmg"><img src="{% static 'icons/apple.png' %}" alt=""></a></button>
+                    <button type="submit" class="install"><a href="https://github.com/Paladeche/launcher/releases/download/1.0.1/Paladeche-Launcher-linux-x86_64.AppImage"><img src="{% static 'icons/ubuntu.webp' %}" alt=""></a></button>
+                </div>
         </div>
     </main>
     <footer>
