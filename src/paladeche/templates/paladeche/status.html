@@ -24,7 +24,7 @@
                     <p class="server_name">{{server.name}}</p>
                     {% if server.status %}
                     <p class="players" style="display: flex; justify-content: center; align-items: center;">{{ server.status.players.online }} / {{ server.status.players.max }}</p>
-                    <p class="latency" style="display: flex; justify-content: end; align-items: center;">{{ server.status.latency }}</p>
+                    <p class="latency" style="display: flex; justify-content: end; align-items: center;">{% if server.name == "launcher" %}{{ server.latency }} {% else %}{{ server.status.latency }} {% endif %}</p>
                     {% else %}
                     <p class="players" style="display: flex; justify-content: center; align-items: center;">Le serveur est hors ligne.</p>
                     {% endif %}
